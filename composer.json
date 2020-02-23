@@ -1,0 +1,29 @@
+{
+    "name": "els/itsa-core-functionality",
+    "version": "0.1.0",
+    "type": "wordpress-plugin",
+    "description": "Provides core functionality for the ITSA site.",
+    "authors": [
+        {
+            "name": "Emily Leffler Schulman",
+            "email": "emily@mobtownstudios.com"
+        }
+    ],
+    "require-dev": {
+        "squizlabs/php_codesniffer": "dev-master",
+        "dealerdirect/phpcodesniffer-composer-installer": "^0.5.0",
+        "wp-coding-standards/wpcs": "^2.0",
+        "phpcompatibility/phpcompatibility-wp": "^2.0",
+        "els/els-php-standard": "dev-master",
+        "roave/security-advisories": "dev-master",
+        "phpunit/phpunit": "7.*"
+    },
+    "require": {
+        "php": ">=7.0",
+        "abraham/twitteroauth": "^1.1"
+    },
+    "scripts": {
+        "lint": "vendor/bin/phpcs --standard=ELS-PHP-Standard .",
+        "lint-fix": "vendor/bin/phpcbf --standard=ELS-PHP-Standard ."
+    }
+}

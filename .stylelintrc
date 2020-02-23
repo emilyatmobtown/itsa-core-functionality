@@ -1,0 +1,18 @@
+{
+  "extends": "stylelint-config-wordpress",
+  "plugins": [
+    "stylelint-declaration-use-variable",
+    "stylelint-order",
+    "stylelint-scss",
+  ],
+  "rules": {
+    "function-url-quotes": "always",
+    "selector-class-pattern": null,
+    "no-eol-whitespace": null,
+    "selector-nested-pattern": null,
+    "no-descending-specificity": [true, { "severity": "warning" }],
+    "at-rule-no-unknown": [true, {
+      "ignoreAtRules": ["function", "if", "each", "include", "mixin", "return", "extend", "custom-media"]
+    }],
+  }
+}
